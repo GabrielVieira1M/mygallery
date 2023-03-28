@@ -1,0 +1,137 @@
+/*=======Global config========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --name-color:#4E5150;
+  --country-color:#A9A9A9;
+  --statistics-bg:#E5E5E5;
+  --statistic-title-color:#4E5150;
+  --post-color:#BDBDBD;
+  --footer-color:#B9BDCF;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: auto;
+  text-align: center;
+}
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/*=========Header====================== */
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image {
+  width: 9.75rem;
+  border-radius:5px ;
+  margin-top: 3.75rem;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.82875rem;
+  color: var(--name-color);
+  margin: 8px 0;
+}
+
+.country {
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.0625rem;
+  color: var(--country-color);
+}
+
+/*=========Statistics========================== */
+.statistics {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0 4rem 0;
+}
+.statistic {
+  background-color: var(--statistics-bg);
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.statistic-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--statistic-title-color);
+}
+.statistic-post {
+  font-size: .875rem;
+  font-weight: 600;
+  color: var(--post-color);
+}
+
+/*=========Galery================================= */
+.gallery {
+  width: 60%;
+  padding-top: 8rem;
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+      "primeira segunda segunda"
+      "terceira terceira quarta"
+      "quinta sexta quarta";
+  margin: auto;
+}
+
+.gallery-img img {
+  border-radius: 1.2rem;
+}
+
+.gallery-img:nth-child(1) {
+  grid-area: primeira;
+}
+
+.gallery-img:nth-child(2) {
+  grid-area: segunda;
+}
+
+.gallery-img:nth-child(3) {
+  grid-area: terceira;
+}
+
+.gallery-img:nth-child(4) {
+  grid-area: quarta;
+}
+
+.gallery-img:nth-child(5) {
+  grid-area: quinta;
+}
+
+.gallery-img:nth-child(6) {
+  grid-area: sexta;
+}
+
+
+/*========Footer========================= */
+#footer {
+  text-align: center;
+  margin: 8.375rem 0 1.5rem 0;
+}
+#footer p {
+  font-size: .875rem;
+  font-weight: 500;
+  line-height: 17px;
+  color: var(--footer-color);
+}
+
+#footer p a {
+  text-decoration: none;
+  color: var(--footer-color);
+}
+
+#footer p a:hover {
+  text-decoration: underline;
+}
